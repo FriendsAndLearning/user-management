@@ -1,4 +1,4 @@
-package com.usermanagement.usermanagement.controller;
+package com.usermanagement.controller;
 
 import java.util.HashMap;
 import java.util.List;
@@ -17,10 +17,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.usermanagement.usermanagement.exception.ResourceNotFoundException;
-import com.usermanagement.usermanagement.model.User;
-import com.usermanagement.usermanagement.service.UserService;
-import com.usermanagement.usermanagement.service.impl.SequenceGeneratorService;
+import com.usermanagement.exception.ResourceNotFoundException;
+import com.usermanagement.model.User;
+import com.usermanagement.service.UserService;
+import com.usermanagement.service.impl.SequenceGeneratorService;
 
 @RestController
 @RequestMapping("/api/v1")

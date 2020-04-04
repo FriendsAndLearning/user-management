@@ -1,14 +1,14 @@
-package com.usermanagement.usermanagement.service.impl;
+package com.usermanagement.service.impl;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.usermanagement.usermanagement.exception.ResourceNotFoundException;
-import com.usermanagement.usermanagement.model.User;
-import com.usermanagement.usermanagement.repository.UserRepository;
-import com.usermanagement.usermanagement.service.UserService;
+import com.usermanagement.exception.ResourceNotFoundException;
+import com.usermanagement.model.User;
+import com.usermanagement.repository.UserRepository;
+import com.usermanagement.service.UserService;
 
 @Service
 public class UserServiceImpl implements UserService {

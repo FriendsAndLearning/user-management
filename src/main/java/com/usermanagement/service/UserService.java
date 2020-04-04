@@ -1,9 +1,9 @@
-package com.usermanagement.usermanagement.service;
+package com.usermanagement.service;
 
 import java.util.List;
 
-import com.usermanagement.usermanagement.exception.ResourceNotFoundException;
-import com.usermanagement.usermanagement.model.User;
+import com.usermanagement.exception.ResourceNotFoundException;
+import com.usermanagement.model.User;
 
 public interface UserService {
 	public List<User> getAllUsers();

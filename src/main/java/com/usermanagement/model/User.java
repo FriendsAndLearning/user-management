@@ -1,11 +1,10 @@
-package com.usermanagement.usermanagement.model;
+package com.usermanagement.model;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
-import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "User")
@@ -19,27 +18,22 @@ public class User {
 
 	@NotBlank
 	@Size(max = 50)
-	@Indexed(unique = true)
 	private String fullName;
 
 	@NotBlank
 	@Size(max = 50)
-	@Indexed(unique = true)
 	private String emailId;
 
 	@NotBlank
 	@Size(max = 10)
-	@Indexed(unique = true)
 	private String dateOfBirth;
 
 	@NotBlank
 	@Size(max = 10)
-	@Indexed(unique = true)
 	private String mobileNumber;
 
 	@NotBlank
 	@Size(max = 50)
-	@Indexed(unique = true)
 	private String loginType;
 
 	public User() {
@@ -101,6 +95,12 @@ public class User {
 
 	public void setLoginType(String loginType) {
 		this.loginType = loginType;
+	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", fullName=" + fullName + ", emailId=" + emailId + ", dateOfBirth=" + dateOfBirth
+				+ ", mobileNumber=" + mobileNumber + ", loginType=" + loginType + "]";
 	}
 
 }
