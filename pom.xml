@@ -8,11 +8,11 @@
 		<version>2.1.0.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.user-management</groupId>
+	<groupId>com.usermanagement</groupId>
 	<artifactId>user-management</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>user-management</name>
-	<description>Demo project for Spring Boot</description>
+	<description>User Management Project with MongoDB</description>
 
 	<properties>
 		<java.version>1.8</java.version>
